@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sirui Li - Personal Homepage</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sirui Li - Personal Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
   <style>
-    .header-section {
-      background-color: #333;
-      color: #fff;
-      padding: 60px 0;
-    }
-    .bg-light-gray {
-      background-color: #f9f9f9;
-    }
-    .icon {
-      font-size: 1.5em;
+    /* 页面样式调整 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
       color: #333;
+    }
+
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .header-section {
+      background: linear-gradient(to bottom right, #00264d, #004080);
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .header-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .bg-custom-light {
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      color: #004080;
+    }
+
+    .contact-icons a {
+      color: #004080;
+      font-size: 1.5rem;
+      margin: 0 10px;
       transition: color 0.3s;
     }
-    .icon:hover {
-      color: #0d6efd;
+
+    .contact-icons a:hover {
+      color: #ff8c00;
+    }
+
+    /* Experience & Education */
+    .section-content {
+      margin-top: 20px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .header-section h1 {
+        font-size: 2.5rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
     <a class="navbar-brand" href="#">Sirui Li</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -47,57 +86,55 @@
 <!-- Header Section -->
 <section class="header-section text-center">
   <div class="container">
-    <h1 class="display-4">Sirui Li</h1>
-    <p class="lead">Math and Computer Science Student at University of Wisconsin-Madison</p>
-    <p>Machine Learning | Computer Vision | Data Science</p>
-    <a href="https://www.linkedin.com/in/sirui-li-728177225/" class="btn btn-outline-light btn-lg mt-3" target="_blank">LinkedIn</a>
+    <h1>Sirui Li</h1>
+    <p class="lead mt-4">Computer Science and Math Student at University of Wisconsin-Madison</p>
+    <p>Passionate about AI and Machine Learning</p>
+    <a href="https://www.linkedin.com/in/sirui-li-728177225/" class="btn btn-outline-light btn-lg mt-3">LinkedIn</a>
   </div>
 </section>
 
 <!-- About Section -->
-<section id="about" class="p-5 bg-light-gray">
+<section id="about" class="p-5 bg-custom-light">
   <div class="container">
-    <h2 class="text-center mb-4">About Me</h2>
-    <p class="lead">I am an undergraduate student majoring in Computer Science and Mathematics at the University of Wisconsin-Madison, with a strong interest in Machine Learning and AI research.</p>
+    <h2 class="text-center section-title">About Me</h2>
+    <p class="lead text-center mt-3">I'm an enthusiastic undergraduate at UW-Madison with a keen interest in Machine Learning and AI. I love tackling complex problems with data-driven approaches and aspire to contribute to the AI research community.</p>
   </div>
 </section>
 
 <!-- Education Section -->
 <section id="education" class="p-5">
   <div class="container">
-    <h2 class="text-center mb-4">Education</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h4>University of Wisconsin-Madison</h4>
-        <p>Bachelor of Science, Major: Computer Science (Honors), Mathematics</p>
-        <p>GPA: 3.98/4.0 | Expected Graduation: May 2025</p>
-      </div>
+    <h2 class="text-center section-title">Education</h2>
+    <div class="section-content text-center">
+      <h4>University of Wisconsin-Madison</h4>
+      <p>Bachelor of Science, Major: Computer Science (Honors), Mathematics</p>
+      <p>GPA: 3.98/4.0 | Expected Graduation: May 2025</p>
     </div>
   </div>
 </section>
 
 <!-- Experience Section -->
-<section id="experience" class="p-5 bg-light-gray">
+<section id="experience" class="p-5 bg-custom-light">
   <div class="container">
-    <h2 class="text-center mb-4">Experience</h2>
+    <h2 class="text-center section-title">Experience</h2>
     <div class="row">
       <div class="col-md-6">
-        <h5>Backend Developer Intern</h5>
+        <h5 class="mt-4">Backend Developer Intern</h5>
         <p><strong>Bank of China, Shenzhen Branch</strong></p>
         <p>Jun 2024 - Aug 2024</p>
         <ul>
           <li>Enhanced RAG technology for personalized recommendations.</li>
-          <li>Improved system response time by 10-15%.</li>
-          <li>Led UI/UX improvements to boost engagement.</li>
+          <li>Improved response time by 10-15% through infrastructure improvements.</li>
+          <li>Led UI/UX refinements, boosting engagement rates.</li>
         </ul>
       </div>
       <div class="col-md-6">
-        <h5>Researcher</h5>
-        <p><strong>General Motors Collaboration Project, UW-Madison</strong></p>
+        <h5 class="mt-4">Researcher</h5>
+        <p><strong>UW-Madison, General Motors Collaboration Project</strong></p>
         <p>Sep 2024 - Present</p>
         <ul>
-          <li>Enhanced real-time detection for factory safety protocols.</li>
-          <li>Improved model accuracy by 15-20%.</li>
+          <li>Developed real-time detection features to enhance factory safety.</li>
+          <li>Increased model accuracy by 15-20% through advanced training.</li>
         </ul>
       </div>
     </div>
@@ -107,22 +144,24 @@
 <!-- Contact Section -->
 <section id="contact" class="p-5 text-center">
   <div class="container">
-    <h2 class="mb-4">Contact</h2>
+    <h2 class="section-title">Contact</h2>
     <p>Email: <a href="mailto:siruili3333@gmail.com">siruili3333@gmail.com</a></p>
-    <div class="mt-4">
-      <a href="mailto:siruili3333@gmail.com" class="icon me-3"><i class="bi bi-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/sirui-li-728177225/" target="_blank" class="icon me-3"><i class="bi bi-linkedin"></i></a>
+    <div class="contact-icons mt-4">
+      <a href="mailto:siruili3333@gmail.com"><i class="bi bi-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/sirui-li-728177225/"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/your-github-profile"><i class="bi bi-github"></i></a>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
-  <p class="small mb-0">&copy; 2024 Sirui Li | Built with Bootstrap 5</p>
+  <p class="small mb-0">&copy; 2024 Sirui Li | Powered by Bootstrap</p>
 </footer>
 
-<!-- Bootstrap JavaScript Bundle with Popper -->
+<!-- Bootstrap Bundle JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
 

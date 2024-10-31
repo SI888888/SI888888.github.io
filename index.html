@@ -7,7 +7,60 @@
   <title>Sirui Li - Personal Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* 页面样式调整 */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .header-section {
+      background: linear-gradient(to bottom right, #00264d, #004080);
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .header-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .bg-custom-light {
+      background-color: #f8f9fa;
+    }
+
+    .section-title {
+      color: #004080;
+    }
+
+    .contact-icons a {
+      color: #004080;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .contact-icons a:hover {
+      color: #ff8c00;
+    }
+
+    /* Experience & Education */
+    .section-content {
+      margin-top: 20px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .header-section h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -30,20 +83,13 @@
   </div>
 </nav>
 
-<!-- Header Section with Background Overlays -->
-<section class="header-section">
-  <div class="container text-center">
+<!-- Header Section -->
+<section class="header-section text-center">
+  <div class="container">
     <h1>Sirui Li</h1>
     <p class="lead mt-4">Computer Science and Math Student at University of Wisconsin-Madison</p>
     <p>Passionate about AI and Machine Learning</p>
     <a href="https://www.linkedin.com/in/sirui-li-728177225/" class="btn btn-outline-light btn-lg mt-3">LinkedIn</a>
-  </div>
-
-  <!-- 背景装饰图案 -->
-  <div class="background-icons">
-    <img src="IMG_2082.png" class="icon" style="top: 10%; left: 15%;">
-    <img src="IMG_2136.png" class="icon" style="top: 30%; left: 60%;">
-    <!-- 可以继续添加更多图标 -->
   </div>
 </section>
 
@@ -51,7 +97,47 @@
 <section id="about" class="p-5 bg-custom-light">
   <div class="container">
     <h2 class="text-center section-title">About Me</h2>
-    <p class="lead text-center mt-3">I'm an enthusiastic undergraduate at UW-Madison with a keen interest in Machine Learning and AI.</p>
+    <p class="lead text-center mt-3">I'm an enthusiastic undergraduate at UW-Madison with a keen interest in Machine Learning and AI. I love tackling complex problems with data-driven approaches and aspire to contribute to the AI research community.</p>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="p-5">
+  <div class="container">
+    <h2 class="text-center section-title">Education</h2>
+    <div class="section-content text-center">
+      <h4>University of Wisconsin-Madison</h4>
+      <p>Bachelor of Science, Major: Computer Science (Honors), Mathematics</p>
+      <p>GPA: 3.98/4.0 | Expected Graduation: May 2025</p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="p-5 bg-custom-light">
+  <div class="container">
+    <h2 class="text-center section-title">Experience</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="mt-4">Backend Developer Intern</h5>
+        <p><strong>Bank of China, Shenzhen Branch</strong></p>
+        <p>Jun 2024 - Aug 2024</p>
+        <ul>
+          <li>Enhanced RAG technology for personalized recommendations.</li>
+          <li>Improved response time by 10-15% through infrastructure improvements.</li>
+          <li>Led UI/UX refinements, boosting engagement rates.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5 class="mt-4">Researcher</h5>
+        <p><strong>UW-Madison, General Motors Collaboration Project</strong></p>
+        <p>Sep 2024 - Present</p>
+        <ul>
+          <li>Developed real-time detection features to enhance factory safety.</li>
+          <li>Increased model accuracy by 15-20% through advanced training.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -78,5 +164,3 @@
 </body>
 
 </html>
-
-

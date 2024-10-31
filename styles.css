@@ -1,4 +1,3 @@
-/* 重置和通用样式 */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* 页面基础布局 */
 body {
     display: flex;
     flex-direction: column;
@@ -56,71 +54,3 @@ footer {
     text-decoration: none;
     margin: 0 5px;
 }
-
-/* 添加新的样式 */
-
-/* Header Section with layered background and positioned icons */
-.header-section {
-    position: relative;
-    background: linear-gradient(to bottom right, #00264d, #004080);
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-    overflow: hidden;
-}
-
-.header-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.bg-custom-light {
-    background-color: #f8f9fa;
-}
-
-.section-title {
-    color: #004080;
-}
-
-/* Contact icons */
-.contact-icons a {
-    color: #004080;
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.contact-icons a:hover {
-    color: #ff8c00;
-}
-
-/* Positioned icons inside header section */
-.background-icons {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; /* 防止图标影响按钮点击 */
-}
-
-.icon {
-    position: absolute;
-    width: 60px; /* 每个图标大小 */
-    opacity: 0.5; /* 透明度 */
-    animation: float 10s infinite ease-in-out alternate;
-}
-
-/* 漂浮动画效果 */
-@keyframes float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .header-section h1 {
-        font-size: 2.5rem;
-    }
-}
-

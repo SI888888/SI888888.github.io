@@ -19,10 +19,18 @@
       background-color: #343a40;
     }
 
+    /* Header Section with layered background and positioned icons */
     .header-section {
-      background: linear-gradient(to bottom right, #00264d, #004080);
+      position: relative;
+      background:
+        url('img/background-icon1.png') repeat 10% 10%,
+        url('img/background-icon2.png') repeat 30% 30%,
+        url('img/background-icon3.png') repeat 50% 50%,
+        linear-gradient(to bottom right, #00264d, #004080);
       color: #fff;
       padding: 80px 0;
+      text-align: center;
+      overflow: hidden;
     }
 
     .header-section h1 {
@@ -38,6 +46,7 @@
       color: #004080;
     }
 
+    /* Contact icons */
     .contact-icons a {
       color: #004080;
       font-size: 1.5rem;
@@ -49,9 +58,27 @@
       color: #ff8c00;
     }
 
-    /* Experience & Education */
-    .section-content {
-      margin-top: 20px;
+    /* Positioned icons inside header section */
+    .background-icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* 防止图标影响按钮点击 */
+    }
+
+    .icon {
+      position: absolute;
+      width: 60px; /* 每个图标大小 */
+      opacity: 0.5; /* 透明度 */
+      animation: float 10s infinite ease-in-out alternate;
+    }
+
+    /* 漂浮动画效果 */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
     }
 
     /* Responsive design */
@@ -83,13 +110,22 @@
   </div>
 </nav>
 
-<!-- Header Section -->
-<section class="header-section text-center">
+<!-- Header Section with Background Overlays -->
+<section class="header-section">
   <div class="container">
     <h1>Sirui Li</h1>
     <p class="lead mt-4">Computer Science and Math Student at University of Wisconsin-Madison</p>
     <p>Passionate about AI and Machine Learning</p>
     <a href="https://www.linkedin.com/in/sirui-li-728177225/" class="btn btn-outline-light btn-lg mt-3">LinkedIn</a>
+  </div>
+
+  <!-- 背景装饰图案 -->
+  <div class="background-icons">
+    <img src="img/background-icon1.png" class="icon" style="top: 10%; left: 15%;">
+    <img src="img/background-icon2.png" class="icon" style="top: 30%; left: 60%;">
+    <img src="img/background-icon3.png" class="icon" style="top: 50%; left: 20%;">
+    <img src="img/background-icon4.png" class="icon" style="top: 70%; left: 80%;">
+    <!-- 可以继续添加更多图标 -->
   </div>
 </section>
 
@@ -164,4 +200,5 @@
 </body>
 
 </html>
+
 

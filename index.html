@@ -1,76 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Sirui Li - Computer Science and Mathematics Student at UW-Madison" />
-  <meta name="keywords" content="Sirui Li, Computer Science, Machine Learning, UW-Madison" />
-  <title>Sirui Li</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirui Li - Personal Page</title>
   <style>
-    /* 调整标题文本居中对齐 */
-    .intro-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 50vh;
-    }
-    .intro-section h1, .intro-section h3 {
+    /* Reset */
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f7fb;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 2px solid #e0e6ed;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 1em;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f8fafc;
+      border: 1px solid #e0e6ed;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      color: #3b82f6;
+      margin-bottom: 10px;
+    }
+
+    .section-content h3 {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .section-content p {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .section-content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .section-content li {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #eef2f6;
+      margin-bottom: 10px;
     }
   </style>
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-    <div class="container">
-      <a href="#" class="navbar-brand">Sirui Li</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Sirui Li</h1>
+      <p class="contact-info">
+        Madison, WI | <a href="mailto:siruili3333@gmail.com">siruili3333@gmail.com</a> | (608) 217-4962 | <a href="https://www.linkedin.com/in/sirui-li-728177225/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="section-content">
+        <h3>University of Wisconsin-Madison</h3>
+        <p>Bachelor of Science, Computer Science (Honors), Mathematics</p>
+        <p>Expected Graduation: May 2025 | GPA: 3.98/4.0</p>
+        <ul>
+          <li><strong>Research Tools:</strong> LoRA, Intel RealSense, TensorFlow, Lightbuzz, Conda</li>
+          <li><strong>Languages:</strong> English, Chinese</li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <!-- About Section -->
-  <section class="bg-dark text-light p-5 text-center intro-section">
-    <div class="container">
-      <h1 class="mb-3">Sirui <span class="text-warning">Li</span></h1>
-      <h3>Computer Science and Mathematics student at <a href="https://www.wisc.edu/" style="text-decoration: none">UW-Madison</a></h3>
-      <a href="#research"><button class="btn btn-outline-primary mx-2 mt-5">Research</button></a>
-    </div>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="section-content">
+        <h3>Backend Developer Intern | Bank of China</h3>
+        <p>Shenzhen, China | June 2024 - Aug 2024</p>
+        <ul>
+          <li>Enhanced RAG tech for personalized recommendations in customer service platform.</li>
+          <li>Reduced response time by ~10-15% and increased system availability by 10%.</li>
+          <li>Optimized UI/UX for increased engagement, developed an inquiry processing app.</li>
+        </ul>
 
-  <!-- About Section -->
-  <section class="p-3 bg-light text-dark" id="about">
-    <div class="container mt-3">
-      <h1>About</h1>
-      <p>I am Sirui Li, a senior student in Computer Science (Honors) and Mathematics at the University of Wisconsin-Madison. I am passionate about machine learning and optimization, with hands-on experience in various research tools like LoRA, Intel RealSense, and PyTorch.</p>
-    </div>
+        <h3>Researcher | UW-Madison & General Motors Collaboration</h3>
+        <p>Madison, WI | Sep 2024 - Present</p>
+        <ul>
+          <li>Developed Android app features for real-time detection of factory worker movements.</li>
+          <li>Led GM safety checklist tasks, improved detection accuracy by 15-20%.</li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Research Section -->
-    <div class="container mt-4" id="research">
-      <h1>Research & Internship Experience</h1>
-      <h5>Bank of China, Shenzhen Branch - Backend Developer and AI Intern</h5>
-      <p>Jun 2024 – Aug 2024 | Shenzhen, China</p>
-      <ul>
-        <li>Utilized RAG technology to integrate language models with the product list, enhancing the online customer experience.</li>
-        <li>Collaborated with cross-functional teams to reduce response time by 10-15% and increase system availability by 10%.</li>
-      </ul>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+      <div class="section-content">
+        <ul>
+          <li><strong>Programming:</strong> Python, Pytorch, TensorFlow</li>
+          <li><strong>Data Science:</strong> MSM Builder, Lightbuzz, RAG</li>
+          <li><strong>Other Tools:</strong> Conda, LoRA, Intel RealSense</li>
+        </ul>
+      </div>
+    </section>
 
-   
+  </div>
 
+</body>
+</html>
 

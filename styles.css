@@ -114,4 +114,6 @@ footer {
     background-color: #f4f4f4; /* 替换为 Research 部分使用的颜色 */
     padding: 2em 1em;
 }
-
+.bg-custom-light {
+  background-color: #f8f9fa; /* 根据 research section 的背景色 */
+}

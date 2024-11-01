@@ -109,3 +109,9 @@ footer {
     border-color: #0056b3;
 }
 
+/* Papers Section Background Color */
+#papers {
+    background-color: #f4f4f4; /* 替换为 Research 部分使用的颜色 */
+    padding: 2em 1em;
+}
+

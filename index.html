@@ -120,6 +120,51 @@
       Sirui Li is an MSE student in Computer and Information Science at the University of Pennsylvania, focusing on distributed systems, data analytics, and applied AI. He has built scalable backend systems and AI pipelines in areas including educational data mining, computer vision, and scientific applications, emphasizing reliability and real-world deployment. Sirui also brings leadership experience from UW–Madison’s Associated Students of Madison (ASM), which informs his systems-minded, stakeholder-aware approach to engineering.
     </p>
   </div>
+  <!-- Featured Project (Left Image + Right Text) -->
+  <hr class="my-5" style="opacity: 0.15;">
+  <div class="row align-items-center g-4 mt-5">
+    <!-- Left: Project Image -->
+    <div class="col-md-5">
+      <a href="https://docs.google.com/document/d/1BZvRL_XMSP2UaLh_fR8NnGztmChLblHl/edit?usp=sharing&ouid=108944764292603152997&rtpof=true&sd=true" class="d-block">
+        <img src="project-penncloud.png" alt="PennCloud Project Preview"
+             class="img-fluid rounded-4 shadow-sm"
+             style="width: 100%; height: 320px; object-fit: cover;">
+      </a>
+    </div>
+  
+    <!-- Right: Project Description -->
+    <div class="col-md-7">
+      <p class="text-uppercase text-muted mb-2" style="letter-spacing: 1px;">Featured Project</p>
+      <h3 class="fw-bold mb-2">PennCloud Distributed Cloud Platform</h3>
+      <p class="text-muted mb-3">
+        A fault-tolerant “mini Google Cloud” with webmail + file storage, powered by a replicated
+        Bigtable-style KV store and an HTTP/1.1 frontend.
+      </p>
+  
+      <!-- Tags -->
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <span class="badge text-bg-light border">C/C++</span>
+        <span class="badge text-bg-light border">Distributed Systems</span>
+        <span class="badge text-bg-light border">Replication</span>
+        <span class="badge text-bg-light border">Fault Tolerance</span>
+        <span class="badge text-bg-light border">Networking</span>
+      </div>
+  
+      <!-- Highlights -->
+      <ul class="mb-4">
+        <li>Architected a multi-tier distributed system with an HTTP/1.1 frontend and a replicated key-value store (Bigtable-style) supporting PUT/GET/CPUT/DELETE for scalable data storage and retrieval.</li>
+        <li>Built a fault-tolerant KV storage layer with replication, a disk-backed cache (LRU eviction), and checkpointing to maintain strong consistency under node failures, achieving sub-second failover and reliable state synchronization after crashes</li>
+        <li>Developed a load balancer and multi-threaded web servers to handle concurrent logins and large file uploads (UP TO 3 GB) across Webmail and Drive services, integrating SMTP/POP3 protocols for end-to-end email delivery and retrieval.</li>
+        <li>Built an admin-only dashboard for real-time monitoring, fault injection, and live recovery testing under distributed node failures.</li>
+      </ul>
+  
+      <!-- Buttons -->
+      <div class="d-flex gap-2 flex-wrap">
+        <a href="https://docs.google.com/document/d/1BZvRL_XMSP2UaLh_fR8NnGztmChLblHl/edit?usp=sharing&ouid=108944764292603152997&rtpof=true&sd=true" class="btn btn-dark btn-lg px-4">View Projects</a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
